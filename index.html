@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
+		<style>
+			body {
+				margin: 5px;
+			}
+			
+			h2 {
+				margin-top: 2px;
+			}
+			
+			.adding-list {
+				float: left;
+			
+				background: #fff;
+				border: 1px solid #ccc;
+				width: 400px;
+				margin: 0;
+				padding: 0;
+				font-size: 12px;
+				padding: 2px;
+				overflow: auto;			
+				line-height: 150%;
+				
+				/* DELETE HERE */
+				margin-bottom: 10px;
+			 }
+			
+			.adding-list li {
+				list-style: none;
+				float: left;	
+				padding: 2px;
+				margin: 2px;				
+			}
+			
+			.adding-list li input {
+				border: none;
+				padding: 0;
+				margin: 0;
+				width: 150px;
+			}
+			
+			input {
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.activated {
+				border: 1px solid blue;
+				background: #ccc;
+				
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			#result {
+				margin-top: 20px;
+				border: 1px solid #ccc;
+				width: 400px;
+				height: 250px;
+				background: #eee;
+			}
+			 
+		</style>	
+    </head>
+    <body>  
+
+		<h2>Multiple string collector with JSON generator</h2>
+		
+		<p>Le form: </p>
+		<p><small>(after string add (,) comma )</small></p>
+		
+		<ul class="adding-list">			
+			<li id="input"><input type="text" id="input_text" /></li>			
+		</ul>
+
+		<input type="button" value="Le save" id="save_btn" /> 
+		
+		<div class="clear"></div>
+		
+		<p>Le result: </p>
+		<div id="result">
+			
+		</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+		<script src="js/json2.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>       
+    </body>
+</html>
